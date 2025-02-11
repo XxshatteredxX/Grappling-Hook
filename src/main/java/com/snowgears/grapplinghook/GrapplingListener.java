@@ -141,7 +141,6 @@ public class GrapplingListener implements Listener{
 
     	if(noGrapplePlayers.containsKey(player.getUniqueId())){
     		if((plugin.usePerms() && !player.hasPermission("grapplinghook.player.nocooldown")) || (!plugin.usePerms() && !player.isOp())){
-    			player.sendMessage(ChatColor.GRAY+"You cannot do that yet.");
     			return;
     		}
     	}
